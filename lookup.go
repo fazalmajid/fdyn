@@ -46,7 +46,9 @@ func (f *Fdyn) Fdyn(state request.Request) (*dns.Msg, error) {
 
 		// Check if the reply is correct; if not return FormErr.
 		if !state.Match(ret) {
-			return state.ErrorMessage(dns.RcodeFormatError), nil
+			formerr := new(dns.Msg)
+			formerr.SetRcode(state.Req, dns.RcodeFormatError)
+            return formerr, nil
 		}
 
 		ret = state.Scrub(ret)
