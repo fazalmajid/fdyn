@@ -153,7 +153,8 @@ func (f *Fdyn) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg) (
 		if !state.Match(ret) {
 			debug.Hexdumpf(ret, "Wrong reply for id: %d, %s/%d", state.QName(), state.QType())
 
-			formerr := state.ErrorMessage(dns.RcodeFormatError)
+			formerr := new(dns.Msg)
+			formerr.SetRcode(state.Req, dns.RcodeFormatError)
 			w.WriteMsg(formerr)
 			return 0, nil
 		}
@@ -161,7 +162,8 @@ func (f *Fdyn) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg) (
 		// if an IP is 0.0.0.0 or ::/0, rewrite it using Redis
 		err = rewrite(ret, f, state.Name())
 		if err != nil {
-			formerr := state.ErrorMessage(dns.RcodeFormatError)
+			formerr := new(dns.Msg)
+			formerr.SetRcode(state.Req, dns.RcodeFormatError)
 			w.WriteMsg(formerr)
 		} else {
 			w.WriteMsg(ret)
