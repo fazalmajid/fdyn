@@ -22,4 +22,3 @@ If the queried string does not exist, fdyn will look for wildcard entries, e.g. 
 * *.bar.example.com
 * *.example.com
 * *.com
-* *.
