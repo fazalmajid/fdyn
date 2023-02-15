@@ -8,5 +8,5 @@ require (
 	github.com/gomodule/redigo v1.8.4
 	github.com/miekg/dns v1.1.35
 	github.com/opentracing/opentracing-go v1.2.0
-	github.com/prometheus/client_golang v1.9.0
+	github.com/prometheus/client_golang v1.11.1
 )
