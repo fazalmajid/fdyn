@@ -1,60 +1,44 @@
 module github.com/fazalmajid/fdyn
 
-go 1.15
+go 1.22.0
 
 require (
-	github.com/Azure/azure-sdk-for-go v68.0.0+incompatible // indirect
-	github.com/Azure/go-autorest/autorest v0.11.28 // indirect
-	github.com/Azure/go-autorest/autorest/adal v0.9.22 // indirect
-	github.com/Azure/go-autorest/autorest/azure/auth v0.5.12 // indirect
-	github.com/Azure/go-autorest/autorest/to v0.2.0 // indirect
-	github.com/antonmedv/expr v1.12.0 // indirect
-	github.com/apparentlymart/go-cidr v1.1.0 // indirect
-	github.com/aws/aws-sdk-go v1.44.194 // indirect
 	github.com/coredns/caddy v1.1.1
-	github.com/coredns/coredns v1.10.1
-	github.com/dnstap/golang-dnstap v0.4.0 // indirect
-	github.com/eapache/go-resiliency v1.3.0 // indirect
-	github.com/go-kit/log v0.2.1 // indirect
-	github.com/gogo/googleapis v1.1.0 // indirect
+	github.com/coredns/coredns v1.11.3-0.20240307195428-8e783897a23f
 	github.com/gomodule/redigo v1.8.9
-	github.com/gorilla/mux v1.8.0 // indirect
-	github.com/grpc-ecosystem/grpc-opentracing v0.0.0-20180507213350-8e809c8a8645 // indirect
-	github.com/imdario/mergo v0.3.12 // indirect
-	github.com/infobloxopen/go-trees v0.0.0-20200715205103-96a057b8dfb9 // indirect
-	github.com/jcmturner/gokrb5/v8 v8.4.3 // indirect
-	github.com/klauspost/compress v1.15.11 // indirect
-	github.com/kr/pretty v0.3.0 // indirect
-	github.com/lyft/protoc-gen-validate v0.0.13 // indirect
-	github.com/mattn/go-colorable v0.1.13 // indirect
-	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
-	github.com/miekg/dns v1.1.50
-	github.com/onsi/ginkgo v1.16.5 // indirect
+	github.com/miekg/dns v1.1.58
 	github.com/opentracing/opentracing-go v1.2.0
-	github.com/oschwald/geoip2-golang v1.8.0 // indirect
-	github.com/pierrec/lz4/v4 v4.1.17 // indirect
-	github.com/prometheus/client_golang v1.14.0
-	github.com/prometheus/client_model v0.3.0 // indirect
-	github.com/prometheus/procfs v0.8.0 // indirect
-	github.com/rabbitmq/amqp091-go v1.5.0 // indirect
-	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
-	github.com/rogpeppe/go-internal v1.9.0 // indirect
-	github.com/rs/zerolog v1.28.0 // indirect
-	github.com/streadway/amqp v0.0.0-20190404075320-75d898a42a94 // indirect
-	github.com/urfave/cli/v2 v2.11.0 // indirect
-	github.com/xdg-go/scram v1.1.1 // indirect
-	go.etcd.io/etcd/client/v3 v3.5.7 // indirect
-	go.uber.org/atomic v1.9.0 // indirect
-	golang.org/x/oauth2 v0.3.0 // indirect
-	golang.org/x/sys v0.4.0 // indirect
-	google.golang.org/api v0.109.0 // indirect
-	google.golang.org/grpc v1.52.3 // indirect
-	gopkg.in/DataDog/dd-trace-go.v1 v1.47.0 // indirect
-	gopkg.in/jcmturner/aescts.v1 v1.0.1 // indirect
-	gopkg.in/jcmturner/dnsutils.v1 v1.0.1 // indirect
-	gopkg.in/jcmturner/goidentity.v3 v3.0.0 // indirect
-	gopkg.in/jcmturner/gokrb5.v7 v7.5.0 // indirect
-	gopkg.in/jcmturner/rpc.v1 v1.1.0 // indirect
-	k8s.io/client-go v0.26.1 // indirect
-	k8s.io/klog/v2 v2.90.0 // indirect
+	github.com/prometheus/client_golang v1.19.0
+)
+
+require (
+	github.com/apparentlymart/go-cidr v1.1.0 // indirect
+	github.com/beorn7/perks v1.0.1 // indirect
+	github.com/cespare/xxhash/v2 v2.2.0 // indirect
+	github.com/flynn/go-shlex v0.0.0-20150515145356-3f9db97f8568 // indirect
+	github.com/go-task/slim-sprig v0.0.0-20230315185526-52ccab3ef572 // indirect
+	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/google/pprof v0.0.0-20230817174616-7a8ec2ada47b // indirect
+	github.com/grpc-ecosystem/grpc-opentracing v0.0.0-20180507213350-8e809c8a8645 // indirect
+	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
+	github.com/onsi/ginkgo/v2 v2.11.0 // indirect
+	github.com/onsi/gomega v1.27.10 // indirect
+	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
+	github.com/prometheus/client_model v0.5.0 // indirect
+	github.com/prometheus/common v0.48.0 // indirect
+	github.com/prometheus/procfs v0.12.0 // indirect
+	github.com/quic-go/qtls-go1-20 v0.4.1 // indirect
+	github.com/quic-go/quic-go v0.40.1 // indirect
+	github.com/stretchr/testify v1.8.4 // indirect
+	go.uber.org/mock v0.3.0 // indirect
+	golang.org/x/crypto v0.18.0 // indirect
+	golang.org/x/exp v0.0.0-20230321023759-10a507213a29 // indirect
+	golang.org/x/mod v0.14.0 // indirect
+	golang.org/x/net v0.20.0 // indirect
+	golang.org/x/sys v0.16.0 // indirect
+	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/tools v0.17.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240116215550-a9fa1716bcac // indirect
+	google.golang.org/grpc v1.61.0 // indirect
+	google.golang.org/protobuf v1.32.0 // indirect
 )
